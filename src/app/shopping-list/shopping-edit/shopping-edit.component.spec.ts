@@ -1,28 +1,14 @@
-/* tslint:disable:no-unused-variable */
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { By } from '@angular/platform-browser';
-import { DebugElement } from '@angular/core';
-
 import { ShoppingEditComponent } from './shopping-edit.component';
+import { Ingredient} from '../../shared/ingredient.model';
 
 describe('ShoppingEditComponent', () => {
-  let component: ShoppingEditComponent;
-  let fixture: ComponentFixture<ShoppingEditComponent>;
-
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ ShoppingEditComponent ]
-    })
-    .compileComponents();
-  }));
+  let fixture: ShoppingEditComponent;
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ShoppingEditComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
+    fixture = new ShoppingEditComponent();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
+  describe('setup component', () => {
+    it('should create', () => {});
   });
 });

@@ -1,28 +1,15 @@
-/* tslint:disable:no-unused-variable */
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { By } from '@angular/platform-browser';
-import { DebugElement } from '@angular/core';
-
-import { RecipeListComponent } from './recipe-list.component';
+import { RecipeListComponent } from "./recipe-list.component";
 
 describe('RecipeListComponent', () => {
-  let component: RecipeListComponent;
-  let fixture: ComponentFixture<RecipeListComponent>;
-
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ RecipeListComponent ]
-    })
-    .compileComponents();
-  }));
+  let fixture: RecipeListComponent;
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(RecipeListComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+    fixture = new RecipeListComponent();
+  })
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+  describe('setup component', () => {
+    it('should create', () => {
+      
+    })
+  })
 });
