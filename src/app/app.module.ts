@@ -8,6 +8,8 @@ import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-it
 import { RecipeListComponent } from './recipes/recipe-list/recipe-list.component';
 import { RecipesComponent } from './recipes/recipes.component';
 import { DropdownDirective } from './shared/dropdown.directive';
+import { IngredientService } from './shared/ingredient.service';
+import { LoggingService } from './shared/logging.service';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 
@@ -24,7 +26,7 @@ import { ShoppingListComponent } from './shopping-list/shopping-list.component';
     DropdownDirective
   ],
   imports: [BrowserModule],
-  providers: [],
+  providers: [IngredientService, LoggingService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
