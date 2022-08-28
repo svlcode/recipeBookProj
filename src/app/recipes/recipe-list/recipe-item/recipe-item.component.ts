@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Router } from '@angular/router';
 import { Recipe } from '../../recipe.model';
 
 @Component({
@@ -8,13 +9,12 @@ import { Recipe } from '../../recipe.model';
 })
 export class RecipeItemComponent implements OnInit {
   @Input() recipe: Recipe;
-  @Output() recipeSelected = new EventEmitter();
 
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit() {}
 
-  onSelected() {
-    this.recipeSelected.emit();
-  }
+  // onSelected() {
+  //   this.router.navigate(['/recipes', this.recipe.id])
+  // }
 }
